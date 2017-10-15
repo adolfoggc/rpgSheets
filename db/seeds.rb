@@ -14,7 +14,7 @@ puts "Generating RPG Systems [OK]"
 
 puts "Generating D&D 3.5 char"
 	Char3p5.create!([	{ name: 'Ban', strength: 18, dextery: 12, constitution: 18, intelligence: 14, 
-							wisdom: 10, charisma: 12 },
+							wisdom: 10, charisma: 12, gold_piece: 0, silver_piece: 0, cooper_piece: 0 },
 						{ name: 'Sahada', strength: 14, dextery: 18, constitution: 15, intelligence: 14, 
-							wisdom: 14, charisma: 10 }])
+							wisdom: 14, charisma: 10, gold_piece: 0, silver_piece: 0, cooper_piece: 0 }])
 puts "Generating D&D 3.5 char [OK]"
