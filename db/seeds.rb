@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts "Generating RPG Systems"
-	movies = Movie.create!([	{ name: 'D&D 3.5' },
-								{ name: 'Vampire 3' }])
+	RpgSystem.create!([	{ name: 'D&D 3.5' },
+						{ name: 'Vampire 3' }])
 
 puts "Generating RPG Systems [OK]"
