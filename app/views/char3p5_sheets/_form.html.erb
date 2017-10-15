@@ -1,10 +1,10 @@
-<%= form_for(char3p5) do |f| %>
-  <% if char3p5.errors.any? %>
+<%= form_for(char3p5_sheet) do |f| %>
+  <% if char3p5_sheet.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(char3p5.errors.count, "error") %> prohibited this char3p5 from being saved:</h2>
+      <h2><%= pluralize(char3p5_sheet.errors.count, "error") %> prohibited this char3p5_sheet from being saved:</h2>
 
       <ul>
-      <% char3p5.errors.full_messages.each do |message| %>
+      <% char3p5_sheet.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -44,6 +44,21 @@
   <div class="field">
     <%= f.label :charisma %>
     <%= f.number_field :charisma %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gold_piece %>
+    <%= f.number_field :gold_piece %>
+  </div>
+
+  <div class="field">
+    <%= f.label :silver_piece %>
+    <%= f.number_field :silver_piece %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cooper_piece %>
+    <%= f.number_field :cooper_piece %>
   </div>
 
   <div class="actions">

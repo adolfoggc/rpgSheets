@@ -8,6 +8,9 @@ one:
   intelligence: 1
   wisdom: 1
   charisma: 1
+  gold_piece: 1
+  silver_piece: 1
+  cooper_piece: 1
 
 two:
   name: MyString
@@ -17,3 +20,6 @@ two:
   intelligence: 1
   wisdom: 1
   charisma: 1
+  gold_piece: 1
+  silver_piece: 1
+  cooper_piece: 1
