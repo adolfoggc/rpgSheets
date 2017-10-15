@@ -50,7 +50,9 @@ default: &default
 
 development:
   <<: *default
-  database: myapp_development
+  database: sheets_development
+  username: adolfo
+  password: 
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

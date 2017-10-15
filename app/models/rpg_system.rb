@@ -1,0 +1,2 @@
+class RpgSystem < ApplicationRecord
+end
