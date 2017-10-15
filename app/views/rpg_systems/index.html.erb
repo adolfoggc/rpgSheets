@@ -15,8 +15,8 @@
       <tr>
         <td><%= rpg_system.name %></td>
         <td><%= link_to 'Show', rpg_system %></td>
-        <td><%= link_to 'Edit', edit_rpg_system_path(rpg_system) %></td>
-        <td><%= link_to 'Destroy', rpg_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%=# link_to 'Edit', edit_rpg_system_path(rpg_system) %></td>
+        <td><%=# link_to 'Destroy', rpg_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Rpg System', new_rpg_system_path %>
+<%=# link_to 'New Rpg System', new_rpg_system_path %>
