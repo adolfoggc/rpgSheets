@@ -11,6 +11,9 @@ class CreateChar3p5Sheets < ActiveRecord::Migration[5.0]
       t.integer :gold_piece
       t.integer :silver_piece
       t.integer :cooper_piece
+      t.text :skills
+      t.text :feats
+      t.text :description
 
       t.timestamps
     end

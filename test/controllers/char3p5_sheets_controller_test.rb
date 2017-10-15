@@ -17,7 +17,7 @@ class Char3p5SheetsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create char3p5_sheet" do
     assert_difference('Char3p5Sheet.count') do
-      post char3p5_sheets_url, params: { char3p5_sheet: { charisma: @char3p5_sheet.charisma, constitution: @char3p5_sheet.constitution, cooper_piece: @char3p5_sheet.cooper_piece, dextery: @char3p5_sheet.dextery, gold_piece: @char3p5_sheet.gold_piece, intelligence: @char3p5_sheet.intelligence, name: @char3p5_sheet.name, silver_piece: @char3p5_sheet.silver_piece, strength: @char3p5_sheet.strength, wisdom: @char3p5_sheet.wisdom } }
+      post char3p5_sheets_url, params: { char3p5_sheet: { charisma: @char3p5_sheet.charisma, constitution: @char3p5_sheet.constitution, cooper_piece: @char3p5_sheet.cooper_piece, description: @char3p5_sheet.description, dextery: @char3p5_sheet.dextery, feats: @char3p5_sheet.feats, gold_piece: @char3p5_sheet.gold_piece, intelligence: @char3p5_sheet.intelligence, name: @char3p5_sheet.name, silver_piece: @char3p5_sheet.silver_piece, skills: @char3p5_sheet.skills, strength: @char3p5_sheet.strength, wisdom: @char3p5_sheet.wisdom } }
     end
 
     assert_redirected_to char3p5_sheet_url(Char3p5Sheet.last)
@@ -34,7 +34,7 @@ class Char3p5SheetsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update char3p5_sheet" do
-    patch char3p5_sheet_url(@char3p5_sheet), params: { char3p5_sheet: { charisma: @char3p5_sheet.charisma, constitution: @char3p5_sheet.constitution, cooper_piece: @char3p5_sheet.cooper_piece, dextery: @char3p5_sheet.dextery, gold_piece: @char3p5_sheet.gold_piece, intelligence: @char3p5_sheet.intelligence, name: @char3p5_sheet.name, silver_piece: @char3p5_sheet.silver_piece, strength: @char3p5_sheet.strength, wisdom: @char3p5_sheet.wisdom } }
+    patch char3p5_sheet_url(@char3p5_sheet), params: { char3p5_sheet: { charisma: @char3p5_sheet.charisma, constitution: @char3p5_sheet.constitution, cooper_piece: @char3p5_sheet.cooper_piece, description: @char3p5_sheet.description, dextery: @char3p5_sheet.dextery, feats: @char3p5_sheet.feats, gold_piece: @char3p5_sheet.gold_piece, intelligence: @char3p5_sheet.intelligence, name: @char3p5_sheet.name, silver_piece: @char3p5_sheet.silver_piece, skills: @char3p5_sheet.skills, strength: @char3p5_sheet.strength, wisdom: @char3p5_sheet.wisdom } }
     assert_redirected_to char3p5_sheet_url(@char3p5_sheet)
   end
 

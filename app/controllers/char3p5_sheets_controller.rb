@@ -69,6 +69,6 @@ class Char3p5SheetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def char3p5_sheet_params
-      params.require(:char3p5_sheet).permit(:name, :strength, :dextery, :constitution, :intelligence, :wisdom, :charisma, :gold_piece, :silver_piece, :cooper_piece)
+      params.require(:char3p5_sheet).permit(:name, :strength, :dextery, :constitution, :intelligence, :wisdom, :charisma, :gold_piece, :silver_piece, :cooper_piece, :skills, :feats, :description)
     end
 end

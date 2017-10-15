@@ -11,6 +11,9 @@ one:
   gold_piece: 1
   silver_piece: 1
   cooper_piece: 1
+  skills: MyText
+  feats: MyText
+  description: MyText
 
 two:
   name: MyString
@@ -23,3 +26,6 @@ two:
   gold_piece: 1
   silver_piece: 1
   cooper_piece: 1
+  skills: MyText
+  feats: MyText
+  description: MyText
