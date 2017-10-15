@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Char3p5s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Strength</th>
+      <th>Dextery</th>
+      <th>Constitution</th>
+      <th>Intelligence</th>
+      <th>Wisdom</th>
+      <th>Charisma</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @char3p5s.each do |char3p5| %>
+      <tr>
+        <td><%= char3p5.name %></td>
+        <td><%= char3p5.strength %></td>
+        <td><%= char3p5.dextery %></td>
+        <td><%= char3p5.constitution %></td>
+        <td><%= char3p5.intelligence %></td>
+        <td><%= char3p5.wisdom %></td>
+        <td><%= char3p5.charisma %></td>
+        <td><%= link_to 'Show', char3p5 %></td>
+        <td><%= link_to 'Edit', edit_char3p5_path(char3p5) %></td>
+        <td><%= link_to 'Destroy', char3p5, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Char3p5', new_char3p5_path %>

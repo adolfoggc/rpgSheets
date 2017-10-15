@@ -1,0 +1,52 @@
+<%= form_for(char3p5) do |f| %>
+  <% if char3p5.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(char3p5.errors.count, "error") %> prohibited this char3p5 from being saved:</h2>
+
+      <ul>
+      <% char3p5.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :strength %>
+    <%= f.number_field :strength %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dextery %>
+    <%= f.number_field :dextery %>
+  </div>
+
+  <div class="field">
+    <%= f.label :constitution %>
+    <%= f.number_field :constitution %>
+  </div>
+
+  <div class="field">
+    <%= f.label :intelligence %>
+    <%= f.number_field :intelligence %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wisdom %>
+    <%= f.number_field :wisdom %>
+  </div>
+
+  <div class="field">
+    <%= f.label :charisma %>
+    <%= f.number_field :charisma %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
