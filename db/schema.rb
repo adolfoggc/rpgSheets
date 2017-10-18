@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171018041848) do
+ActiveRecord::Schema.define(version: 20171018042144) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20171018041848) do
     t.integer  "constitution", default: 8
     t.integer  "intelligence", default: 8
     t.integer  "wisdom",       default: 8
-    t.integer  "charisma"
+    t.integer  "charisma",     default: 8
     t.integer  "gold_piece"
     t.integer  "silver_piece"
     t.integer  "cooper_piece"
