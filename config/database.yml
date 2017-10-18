@@ -51,7 +51,7 @@ default: &default
 development:
   <<: *default
   database: sheets_development
-  username: adolfo
+  username: jasao
   password: 
 
   # The specified database role being used to connect to postgres.
@@ -110,5 +110,5 @@ test:
 production:
   <<: *default
   database: sheets_production
-  username: adolfo
+  username: jasao
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>

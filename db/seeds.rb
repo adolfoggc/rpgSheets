@@ -23,5 +23,6 @@ puts "Generating D&D 3.5 char"
 							wisdom: 14, charisma: 10, gold_piece: 0, silver_piece: 0, cooper_piece: 0, 
 							skills: 'Acrobacia +4, Furtividade +4, Saltar +4, Observar +4
 							Ouvir +4, Procurar +4, Equilíbrio +4', feats: 'Especialização em Combate, Esquiva',
-							description: 'Rapaz de cabelos e olhos castanhos. Brincalhão. Leal e neutro.' }])
+							description: 'Rapaz de cabelos e olhos castanhos. Bon Vivant brincalhão que é um filantropo na realidade.
+							 Leal e neutro.' }])
 puts "Generating D&D 3.5 char [OK]"

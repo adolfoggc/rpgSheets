@@ -18,7 +18,13 @@
 
   <div class="field">
     <%= f.label :strength %>
-    <%= f.number_field :strength %>
+    <% if :strength == nil %>
+      <%= @strength %> 
+      <%= f.number_field :strength %>
+    <%else %>
+      <%= 9999 %>
+      <%= @strength %>
+    <%end%>
   </div>
 
   <div class="field">
