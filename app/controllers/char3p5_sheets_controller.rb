@@ -15,17 +15,19 @@ class Char3p5SheetsController < ApplicationController
   # GET /char3p5_sheets/new
   def new
     @char3p5_sheet = Char3p5Sheet.new
+    @points = 32
   end
 
   # GET /char3p5_sheets/1/edit
   def edit
+    @points = 32
   end
 
   # POST /char3p5_sheets
   # POST /char3p5_sheets.json
   def create
     @char3p5_sheet = Char3p5Sheet.new(char3p5_sheet_params)
-
+    points
     respond_to do |format|
       if @char3p5_sheet.save
         format.html { redirect_to @char3p5_sheet, notice: 'Char3p5 sheet was successfully created.' }
@@ -40,6 +42,7 @@ class Char3p5SheetsController < ApplicationController
   # PATCH/PUT /char3p5_sheets/1
   # PATCH/PUT /char3p5_sheets/1.json
   def update
+    points
     respond_to do |format|
       if @char3p5_sheet.update(char3p5_sheet_params)
         format.html { redirect_to @char3p5_sheet, notice: 'Char3p5 sheet was successfully updated.' }
