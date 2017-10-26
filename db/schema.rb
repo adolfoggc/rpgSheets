@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171018042144) do
+ActiveRecord::Schema.define(version: 20171026124120) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "char3p5_sheets", force: :cascade do |t|
     t.string   "name"
-    t.integer  "strength",     default: 8
-    t.integer  "dextery",      default: 8
-    t.integer  "constitution", default: 8
-    t.integer  "intelligence", default: 8
-    t.integer  "wisdom",       default: 8
-    t.integer  "charisma",     default: 8
+    t.integer  "strength"
+    t.integer  "dextery"
+    t.integer  "constitution"
+    t.integer  "intelligence"
+    t.integer  "wisdom"
+    t.integer  "charisma"
     t.integer  "gold_piece"
     t.integer  "silver_piece"
     t.integer  "cooper_piece"
